@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact xayn</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <span>xayn | forge arc</span>
+            </div>
+
+
+            <div class="nav-items">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="#">Projects</a></li>
+                    <li><a href="#">Contact me</a></li>
+                </ul>
+            </div>
+
+            <div class="side-nav">
+                <button class="btn1">Hire me</button>
+                <button>o</button>
+            </div>
+        </nav>
+    </header>
+
+    <section class="contactForm">
+
+        <div class="container">
+
+            <div class="leftSide">
+                <div class="box">
+                    <div class="icon">
+
+                    </div>
+
+                    <p>Send an email</p>
+                    <span>joeasam2.00@gmail.com</span>
+                </div>
+
+                <div class="box">
+                    <div class="icon">
+
+                    </div>
+
+                    <p>Location</p>
+                    <span>Akwa Ibom State</span>
+                </div>
+
+                <div class="box">
+                    <div class="icon">
+
+                    </div>
+
+                    <p>Calls or DMs</p>
+                    <span>+234 905 022 6081</span>
+                </div>
+            </div>
+
+            <form action="#">
+                <div class="contact">
+                    <h2>Contact Me</h2>
+                    
+                    <label for="name">Name*</label><br>
+                    <input type="text" id="" placeholder="Full Names"> <br><br>
+
+                    <label for="email">Email*</label><br>
+                    <input type="email" id="" placeholder="xayn@example.com"><br><br>
+
+                    <textarea cols="58" rows="10" required id="message" placeholder="Your Message here"></textarea><br><br>
+                        
+                    <button type="submit">SEND YOUR MESSAGE</button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        
+        <nav>
+            <div class="logo">
+                <span>xayn | forge arc</span>
+            </div>
+
+
+            <div class="nav-items">
+                <ul>
+                    <li><a href="#">X</a></li>
+                    <li><a href="#">Be</a></li>
+                    <li><a href="#">Fb</a></li>
+                </ul>
+            </div>
+
+            <div class="side-nav">
+                <button class="btn1">Hire me</button>
+                <button>o</button>
+            </div>
+        </nav>
+
+    </footer>
+    
+    <div class="mouse-bg"></div>
+
+    <script>
+        const mouseBg = document.querySelector('.mouse-bg');
+
+        document.addEventListener('mousemove', (e) => {
+            mouseBg.style.transform = `translate(${e.clientX}px, ${e.clientY}px)`;
+        });
+    </script>
+</body>
+</html>
