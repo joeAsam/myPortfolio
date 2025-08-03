@@ -1,16 +1,17 @@
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    list-style: none;
-    text-decoration: none;
-    font-family: "Poppins";
-    color: white;
-    font-size: 12px;
+/* ===== RESET & BASE STYLES ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+  color: white;
+  font-size: 12px;
 }
 
-body{
-    background-color: #101111;
+body {
+  background-color: #101111;
 }
 
 .mouse-bg {
@@ -27,228 +28,320 @@ body{
   transition: transform 0.05s ease-out;
 }
 
-
-header{
-    /* border: 2px solid blue; */
-    width: 65%;
-    margin: 0 auto;
-    margin-top: 30px;
-    margin-bottom: 30px;
+/* ===== LAYOUT CONTAINER ===== */
+.container,
+header,
+footer,
+.section-1,
+.section-2,
+.section-3,
+.section-4,
+.contactForm {
+  width: 75%;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
-nav{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+/* ===== NAVIGATION ===== */
+header {
+  margin: 30px auto;
+  margin-bottom: 75px;
 }
 
-nav .logo span{
-    font-weight: 500;
-}
-
-nav .nav-items{
-    border: 2px solid white;
-    border-radius: 50px;
-}
-
-nav .nav-items ul{
-    display: flex;
-    gap: 20px;
-}
-
-nav .nav-items ul li{
-    padding: 5px 15px;
-}
-
-nav .side-nav button{
+.hamburger{
+    display: none;
     cursor: pointer;
-    color: black;
-    background: linear-gradient(to right, #7A87FB, #FFD49C);
-    border: none;
-    border-radius: 100px;
-    padding: 5px 10px;
+    font-size: 28px;
 }
 
-nav .side-nav button:hover{
-    background: linear-gradient(to left, #7A87FB, #FFD49C);
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
-nav .side-nav .btn1{
-    padding: 5px 15px;
-    border-radius: 50px;
+/* nav .screenItems{
+  width: 100%;
+  border: 1px solid green;
+
+} */
+
+
+nav .logo a {
+  font-weight: 500;
 }
 
-.section-1{
-    /* border: 2px solid red; */
-    width: 65%;
-    margin: 0 auto;     
-    height: 61.25vh;
-    background-image: url(./img/table.png);
-    background-size: cover;
-    margin-bottom: 60px;
-    /* background-image: linear-gradient(to right, rgba(255, 255, 255, 0.1) 1.5px, transparent 1.5px),
-                      linear-gradient(to bottom, rgba(255, 255, 255, 0.1) 1.5px, transparent 1.5px);
-    background-size: 199px 110px;
-    background-attachment: fixed;
-    background-position: center; */
+nav .nav-items {
+  border: 2px solid white;
+  border-radius: 50px;
 }
 
-.section-1 .container{
+nav .nav-items ul {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+nav .nav-items ul li {
+  padding: 5px 15px;
+}
+
+nav .side-nav button {
+  cursor: pointer;
+  color: black;
+  background: linear-gradient(to right, #7A87FB, #FFD49C);
+  border: none;
+  border-radius: 100px;
+  padding: 5px 10px;
+}
+
+nav .side-nav button:hover {
+  background: linear-gradient(to left, #7A87FB, #FFD49C);
+}
+
+nav .side-nav .btn1 {
+  padding: 5px 15px;
+}
+
+/* ===== SECTION 1 ===== */
+.section-1 {
+    /* position: fixed; */
+  height: 61.25vh;
+  background-image: url(./img/table.png);
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 60px;
+}
+
+.image{
+    /* position: fixed; */
+}
+
+.section-1 .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.section-1 .writeUp {
+  margin-top: 85px;
+  padding: 20px 100px;
+}
+
+.section-1 h2 {
+  font-size: clamp(1.5rem, 4vw, 2.5rem);
+  font-weight: 400;
+}
+
+.section-1 p {
+  font-size: clamp(0.9rem, 2vw, 1.1rem);
+  margin: 20px 0;
+}
+
+.section-1 .border {
+  display: inline-block;
+  border-radius: 100px;
+  padding: 1.5px;
+  background: linear-gradient(to left, #7A87FB, #FFD49C);
+}
+
+.section-1 button {
+  cursor: pointer;
+  color: black;
+  background: linear-gradient(to right, #7A87FB, #FFD49C);
+  border: none;
+  border-radius: 100px;
+  padding: 5px 10px;
+}
+
+/* ===== SECTION 2 ===== */
+.section-2 h2 {
+  font-size: clamp(1.5rem, 4vw, 2.5rem);
+  font-weight: 400;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.section-2 .cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.section-2 .cardContainer {
+  background-color: #000000;
+  border-radius: 20px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.section-2 .project{
     display: flex;
-    justify-content: center;
+    justify-self: center;
     align-items: center;
-    text-align: center;
-    
 }
 
-.section-1 .container .writeUp{
-    /* background-color: #101111; */
-    margin-top: 85px;
-    padding: 20px 100px;
-}
-
-.section-1 .container h2{
-    font-size: 32px;
-    font-weight: 400;
-}
-
-.section-1 .container p{
+.section-2 .project a{
+    color: #69696991;
+    border-bottom: 1px solid #69696991;
+    font-weight: 600;
     font-size: 14px;
-    margin-top: 20px;
-    margin-bottom: 20px;
 }
 
-.section-1 .container .border{
-    display: inline-block;
-    border-radius: 100px;
-    padding: 1.5px;
-    background: linear-gradient(to left, #7A87FB, #FFD49C);
+.section-2 .imageContainer {
+  width: 100%;
+  max-width: 350px;
+  aspect-ratio: 1/1;
+  border-radius: 10px;
+  background-color: white;
+  margin-bottom: 10px;
 }
 
-.section-1 .container button{
-    cursor: pointer;
-    color: black;
-    background: linear-gradient(to right, #7A87FB, #FFD49C);
-    border: none;
-    border-radius: 100px;
-    padding: 5px 10px;
+/* ===== SECTION 3 (Testimonials) ===== */
+.section-3 {
+  margin: 60px auto 100px;
 }
 
-.section-2{
-    /* border: 2px solid green; */
-    width: 65%;
-    margin: 0 auto;
+.section-3 h2 {
+  font-size: clamp(1.5rem, 4vw, 2.5rem);
+  font-weight: 400;
+  text-align: center;
+  margin-bottom: 20px;
 }
 
-.section-2 .container h2{
-    font-size: 32px;
-    font-weight: 400;
-    margin-bottom: 60px;
+.cardContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
 }
 
-.section-2 .cards{
-    /* display: flex; */
+.card {
+  background-color: #000000;
+  padding: 30px 20px;
+  border-radius: 10px;
 }
 
-.section-2 .cardContainer{
-    /* border:2px solid red; */
-    width: 95%;
-    margin: 0 auto;
+.card .clientDetails {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.card .imageContainer {
+  background-color: white;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+/* ===== SECTION 4 ===== */
+.section-4 {
+  margin-top: 150px;
+  text-align: center;
+}
+
+.section-4 h2 {
+  font-size: clamp(1.2rem, 3vw, 2rem);
+  font-weight: 400;
+}
+
+.section-4 p {
+  margin: 10px 0 20px;
+}
+
+.section-4 button {
+  cursor: pointer;
+  color: black;
+  background: linear-gradient(to right, #7A87FB, #FFD49C);
+  border: none;
+  border-radius: 100px;
+  padding: 5px 10px;
+}
+
+/* ===== FOOTER ===== */
+footer {
+  margin: 150px auto 50px;
+}
+
+/* ===== CONTACT FORM ===== */
+.contactForm {
+  margin-top: 60px;
+}
+
+.contactForm .container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.contactForm .leftSide .box {
+  background-color: #7A87FB;
+  text-align: center;
+  padding: 50px 120px;
+  margin-bottom: 15px;
+}
+
+.contactForm .leftSide .icon {
     display: flex;
-    align-items: center;
-    background-color: #000000;
-    border-radius: 20px;
-    margin-bottom: 20px;
+    justify-self: center;
+  background-color: white;
+  width: 50px;
+  height: 50px;
+  border-radius: 12.5px;
 }
 
-.section-2 .cardContainer .imageContainer{
-    width: 500px;
-    height: 500px;
-    border-radius: 10px;
-    background-color: white;
-    margin: 30px;
+.contactForm h2 {
+  font-size: clamp(1.5rem, 5vw, 3rem);
+  font-weight: 600;
 }
 
-.section-3{
-    /* border: 2px solid blue; */
-    width: 65%;
-    margin: 0 auto;
-    margin-top: 60px;
-    margin-bottom: 100px;
+.contactForm .contact {
+  padding: 30px;
+  border-radius: 10px;
+  background-color: black;
+  flex: 1;
 }
 
- .cardContainer{
-    display: flex;
+.contactForm .contact input,
+.contactForm .contact textarea {
+  width: 100%;
+  padding: 10px;
+  color: black;
+  margin-bottom: 10px;
+  border: none;
+  border-radius: 4px;
 }
 
-.section-3 .container h2{
-    font-size: 32px;
-    font-weight: 400;
+.contactForm .contact input:focus,
+.contactForm .contact textarea:focus {
+  outline: none;
 }
 
- .card{
-    width: 50%;
-    margin-top: 30px;
-    background-color: #000000;
-    padding: 30px 20px;
-    border-radius: 10px;
-    margin-right: 10px;
-    margin-left: 10px;
-    /* box-shadow: 0px 0px 5px rgba(70, 56, 56, 0.1); */
+.contactForm .contact button {
+  padding: 10px;
+  width: 100%;
+  border: 1px solid white;
+  border-radius: 5px;
+  background-color: transparent;
+  cursor: pointer;
+  transition: all 0.35s ease-in-out;
 }
 
- .card .clientDetails{
-    display: flex;
-    align-items: center;
-    margin-bottom: 15px;
-}
-
- .card .imageContainer{
-    background-color: white;
-    width: 50px;
-    height: 50px;
-    border-radius: 50px;
-    margin-right: 10px;
-}
-
-.section-4{
-    width: 65%;
-    /* border: 2px yellow solid; */
-    margin: 0 auto;
-    margin-top: 150px;
-}
-
-.section-4 .container h2{
-    font-size: 24px;
-    font-weight: 400;
-}
-
-.section-4 .container button{
-    cursor: pointer;
-    color: black;
-    background: linear-gradient(to right, #7A87FB, #FFD49C);
-    border: none;
-    border-radius: 100px;
-    padding: 5px 10px;
-}
-
-.section-4 .container p{
-    margin-top: 10px;
-    margin-bottom: 20px;
-}
-
-footer{
-    width: 65%;
-    margin: 0 auto;
-    margin-top: 150px;
-    margin-bottom: 50px;
+.contactForm .contact button:hover {
+  transform: scale(1.05);
+  background-color: #101111;
 }
 
 /* ABOUT HTML */
 .abtSect-1,
 .abtSect-3{
     /* border: 1px solid red; */
-    width: 60%;
+    width: 80%;
     margin: 0 auto;
     margin-top: 60px;
 }
@@ -266,7 +359,7 @@ footer{
 .abtSect-2{
 
     /* border: 1px solid blue; */
-    width: 60%;
+    width: 80%;
     margin: 0 auto;
     margin-top: 60px;
     margin-bottom: 60px;
@@ -325,81 +418,56 @@ footer{
     border-bottom: 1px solid #69696991;
 }
 
-.contactForm{
-    width: 65%;
-    margin: 0 auto;
-    /* border: 1px solid red; */
-    margin-top: 60px;
-}
 
-.contactForm .container{
-    /* background-color: black; */
+/* ===== RESPONSIVE CLEANUP (1 MEDIA QUERY ONLY) ===== */
+@media (max-width: 768px) {
+
+    
+  nav .logo{
+    width: 100%;
     display: flex;
     justify-content: space-between;
-}
+    /* border: 1px solid red; */
+    align-items: center;
+  }
 
-.contactForm .container .leftSide .box{
-    background-color: #7A87FB;
-    margin-bottom: 10px;
+    .hamburger{
+        display: block;
+        margin-left: auto;
+    }
+
+  nav,
+  .nav-items ul,
+  .side-nav {
+    flex-direction: column;
     text-align: center;
-    padding: 50px 150px;
-}
+  }
 
-.contactForm .container .leftSide .box .icon{
-    justify-self: center;
-    background-color: #fff;
-    width: 50px;
-    height: 50px;
-    border-radius: 12.5px;
-}
+  .nav-items,
+  .side-nav{
+    display: none;
+  }
 
-.contactForm .container h2{
-    font-size: 48px;
-    font-weight: 600;
-}
+  
+  .nav-items.active,
+  .side-nav.active{
+    
+  }
 
-.contactForm .container .contact{
-    padding: 50px 50px;
-    border-radius: 10px;
-    background-color: black;
-}
+  .section-1 .writeUp {
+    padding: 20px;
+  }
 
-.contactForm .container .contact input{
-    padding: 10px 200px;
-    padding-left: 10px;
-    color: black;
-}
+  .section-1 {
+    height: auto;
+    padding: 40px 0;
+  }
 
-.contactForm .container .contact input:focus{
-    outline: none;
-    /* color: black; */
-}
+  .section-4 {
+    margin-top: 80px;
+  }
 
-.contactForm .container .contact textarea{
-    padding-left: 10px;
-    padding-top: 10px;
-    color: black;
-}
-
-.contactForm .container .contact textarea:focus{
-    outline: none;
-}
-
-.contactForm .container .contact button{
-    padding: 10px 120px;
-    border: 1px solid white;
-    border-radius: 5px;
-    background-color: transparent;
-    cursor: pointer;
-}
-
-.contactForm .container .contact button:hover{
-    transform: scale(1.1);
-    transition: all .35s ease-in-out;
-    background-color: #101111;
-}
-
-.contactForm .container .contact button:not(:hover){
-    transform: scale(1);
-    transition: all .35s ease-in-out;
+  .contactForm .container {
+    flex-direction: column;
+  }
 }

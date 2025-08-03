@@ -12,12 +12,16 @@
 <body>
     <header>
         <nav>
-            <div class="logo">
-                <span>xayn | forge arc</span>
-            </div>
+                <div class="logo">
+                    <a href="./index.html">xayn | forge arc</a>
+                    
+                    <div class="hamburger" id="hamburger">
+                        &#9776;
+                    </div>
+                </div>
+                
 
-
-            <div class="nav-items">
+            <div class="nav-items" id="nav-items">
                 <ul>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="about.html">About</a></li>
@@ -26,7 +30,7 @@
                 </ul>
             </div>
 
-            <div class="side-nav">
+            <div class="side-nav" id="side-nav">
                 <button class="btn1">Hire me</button>
                 <button>o</button>
             </div>
@@ -35,22 +39,24 @@
 
 
     <section class="section-1">
-        <!-- <div class="image"></div> -->
+        <div class="image"></div>
 
-        <div class="container">
-            <div class="writeUp">
-                <h2>I design and build clean websites</h2>
+            <div class="container">
+                <div class="writeUp">
+                    <h2>I design and build clean websites</h2>
 
-                <p>
-                    Write anything here something about yourself to <br> 
-                    showcase what actually you doing or targeting etc.
-                </p>
+                    <p>
+                        Write anything here something about yourself to <br> 
+                        showcase what actually you doing or targeting etc.
+                    </p>
 
-                <div class="border">
-                    <button>Hire me</button>
+                    <div class="border">
+                        <button>Hire me</button>
+                    </div>
                 </div>
             </div>
-        </div>
+            
+
     </section>
 
     <section class="section-2">
@@ -100,6 +106,10 @@
                         4. Project Name
                     </p>
                 </div>
+
+                <div class="project">
+                    <a href="project.html">See more</a>
+                </div>
             </div>
         </div>
     </section>
@@ -110,7 +120,7 @@
             <h2>Client Testimonials</h2>
 
             <div class="cardContainer">
-                <!-- <div class="card">
+                <div class="card">
 
                     <div class="clientDetails">
                         <div class="imageContainer">
@@ -131,7 +141,7 @@
                         delectus. Laboriosam, fugit vel?
                     </p>
 
-                </div> -->
+                </div>
 
                 <div class="card">
 
@@ -221,7 +231,7 @@
         
         <nav>
             <div class="logo">
-                <span>xayn | forge arc</span>
+                <a href="./index.html">xayn | forge arc</a>
             </div>
 
 
@@ -244,13 +254,14 @@
     
     <div class="mouse-bg"></div>
     
-    <script>
+    <!-- <script>
         const mouseBg = document.querySelector('.mouse-bg');
 
         document.addEventListener('mousemove', (e) => {
             mouseBg.style.transform = `translate(${e.clientX}px, ${e.clientY}px)`;
         });
-    </script>
+    </script> -->
 
+    <script src="./main.js"></script>
 </body>
 </html>
