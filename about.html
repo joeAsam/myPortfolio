@@ -4,42 +4,42 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About xayn</title>
-    <link rel="stylesheet" href="main.css">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Anton&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 </head>
-<body>
-    <header>
-        <nav>
-            <div class="logo">
+<body class="box-border list-none no-underline font-poppins font-sans-serif text-xs text-white bg-[#101111]">
+    <header class="m-7.5 mb-19">
+        <nav class="flex flex-wrap justify-between items-center">
+            <div class="logo font-medium">
                 <a href="./index.html">xayn | forge arc</a>
             </div>
 
 
-            <div class="nav-items">
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="#">Projects</a></li>
-                    <li><a href="contact.html">Contact me</a></li>
+            <div class="nav-items md:hidden border border-solid border-white rounded-lg m-2">
+                <ul class="flex gap-5 flex-wrap">
+                    <li><a href="index.html" class="py-2 px-4">Home</a></li>
+                    <li><a href="about.html" class="py-2 px-4">About</a></li>
+                    <li><a href="#" class="py-2 px-4">Projects</a></li>
+                    <li><a href="contact.html" class="py-2 px-4">Contact me</a></li>
                 </ul>
             </div>
 
-            <div class="side-nav">
-                <button class="btn1">Hire me</button>
-                <button>o</button>
+            <div class="side-nav m-2">
+                <button class="btn1 cursor-pointer bg-[linear-gradient(to_right,#7A87FB,#FFD49C)] text-black border-none rounded-full py-2 px-3 hover:bg-gradient-to-l from-[#7A87FB] to-[#FFD49C]">Hire me</button>
+                <button class="cursor-pointer bg-[linear-gradient(to_right,#7A87FB,#FFD49C)] text-black border-none rounded-full py-1 px-2.5 hover:bg-gradient-to-l from-[#7A87FB] to-[#FFD49C]">o</button>
             </div>
         </nav>
     </header>
 
-    <section class="abtSect-1">
+    <section class="abtSect-1 w-[80%] mx-auto mt-15">
 
         <div class="container">
 
-            <h2>Overview</h2>
+            <h2 class="text-3xl font-semibold">Overview</h2>
 
-            <p>
+            <p class="text-base font-light">
                 Hi, I'm Joe Asam(a.k.a. xayn) — a passionate motion designer and 
                 creative developer based in Nigeria. I bring ideas to 
                 life through storytelling, design, and animation.
@@ -48,13 +48,13 @@
     </section>
 
     
-    <section class="abtSect-1">
+    <section class="abtSect-1 w-[80%] mx-auto mt-15">
 
         <div class="container">
 
-            <h2>What I Do</h2>
+            <h2 class="text-3xl font-semibold">What I Do</h2>
 
-            <p>
+            <p class="text-base font-light">
                 I specialize in motion design, UI animation, and web-based 
                 creative experiences. My work combines visual storytelling 
                 with modern tools like After Effects, HTML/CSS/JS, and 
@@ -66,13 +66,13 @@
     </section>
 
     
-    <section class="abtSect-1">
+    <section class="abtSect-1 w-[80%] mx-auto mt-15">
 
         <div class="container">
 
-            <h2>My Journey</h2>
+            <h2 class="text-3xl font-semibold">My Journey</h2>
 
-            <p>
+            <p class="text-base font-light">
                 I started designing during my secondary school days, fascinated 
                 by how simple visuals could move people. Since then, I've been 
                 on a journey of learning, experimenting, and bringing ideas to life.
@@ -81,76 +81,76 @@
     </section>
 
     
-    <section class="abtSect-2">
+    <section class="abtSect-2 w-[80%] mx-auto mt-15 mb-15">
 
         <div class="container">
-            <h2>Tools & Tech Stack</h2>
+            <h2 class="text-3xl font-semibold">Tools & Tech Stack</h2>
 
-            <div class="firstCardSection">
-                <div class="toolCard">
-                    <div class="image">
+            <div class="firstCardSection flex justify-between">
+                <div class="toolCard w-full bg-[#000] rounded-xs p-3.75 mt-5 text-center mr-2 ml-2">
+                    <div class="image flex justify-center self-center bg-white w-17.5 h-17.5 rounded-xs">
 
                     </div>
                     
                     <div class="subText">
-                        <h3>Figma</h3>
+                        <h3 class="mt-2.5 mb-2.5 text-base">Figma</h3>
                         <span>Ui design, prototyping</span>
                     </div>
                 </div>
 
-                <div class="toolCard">
-                    <div class="image">
+                <div class="toolCard w-full bg-[#000] rounded-xs p-3.75 mt-5 text-center mr-2 ml-2">
+                    <div class="image flex justify-center self-center bg-white w-17.5 h-17.5 rounded-xs">
 
                     </div>
                     
                     <div class="subText">
-                        <h3>Photoshop</h3>
+                        <h3 class="mt-2.5 mb-2.5 text-base">Photoshop</h3>
                         <span>Graphics Design</span>
                     </div>
                 </div>
 
-                <div class="toolCard">
-                    <div class="image">
+                <div class="toolCard w-full bg-[#000] rounded-xs p-3.75 mt-5 text-center mr-2 ml-2">
+                    <div class="image flex justify-center self-center bg-white w-17.5 h-17.5 rounded-xs">
 
                     </div>
                     
                     <div class="subText">
-                        <h3>Adobe After Effects</h3>
+                        <h3 class="mt-2.5 mb-2.5 text-base">Adobe After Effects</h3>
                         <span>Ui design, prototyping</span>
                     </div>
                 </div>
             </div>
 
-            <div class="secondCardSection">
-                <div class="toolCard">
-                    <div class="image">
+            <div class="secondCardSection flex justify-between">
+                <div class="toolCard w-full bg-[#000] rounded-xs p-3.75 mt-5 text-center mr-2 ml-2">
+                    <div class="image flex justify-center self-center bg-white w-17.5 h-17.5 rounded-xs">
 
                     </div>
                     
                     <div class="subText">
-                        <h3>Corel Draw</h3>
+                        <h3 class="mt-2.5 mb-2.5 text-base">Corel Draw</h3>
                         <span>Graphics design</span>
                     </div>
                 </div>
 
-                <div class="toolCard">
-                    <div class="image">
+                <div class="toolCard w-full bg-[#000] rounded-xs p-3.75 mt-5 text-center mr-2 ml-2">
+                    <div class="image flex justify-center self-center bg-white w-17.5 h-17.5 rounded-xs">
 
                     </div>
                     
                     <div class="subText">
-                        <h3>Adobe Illustrator</h3>
+                        <h3 class="mt-2.5 mb-2.5 text-base">Adobe Illustrator</h3>
                         <span>Logo design</span>
                     </div>
                 </div>
 
-                <div class="toolCard">
-                    <div class="image">
+                <div class="toolCard w-full bg-[#000] rounded-xs p-3.75 mt-5 text-center mr-2 ml-2">
+                    <div class="image flex justify-center self-center bg-white w-17.5 h-17.5 rounded-xs">
 
                     </div>
                     
                     <div class="subText">
-                        <h3>VSCode</h3>
+                        <h3 class="mt-2.5 mb-2.5 text-base">VSCode</h3>
                         <span>Code Editor</span>
                     </div>
                 </div>
@@ -160,42 +160,42 @@
 
     </section>
 
-    <section class="abtSect-3">
+    <section class="abtSect-3 w-[80%] mx-auto mt-15">
 
-        <div class="container">
+        <div class="container text-base">
 
             <h2>Call to Action</h2>
 
-            <div>
+            <div class="text-base">
                 Want to collaborate or just say hi?
 
-                <div class="links">
-                    <a href="contact.html">Contact Me</a> or <a href="./docs/ASAM-resume.pdf" download>Download My Resume</a>
+                <div class="links text-base">
+                    <a href="contact.html" class="text-[#69696991] border-b-[#69696991] border-b-solid">Contact Me</a> or <a href="./docs/ASAM-resume.pdf" class="text-[#69696991] border-b-[#69696991] border-b-solid" download>Download My Resume</a>
                 </div>
             </div>
 
         </div>
     </section>
 
-    <footer>
+    <footer class="mt-37.5 mb-12.5 mx-auto">
         
         <nav>
             <div class="logo">
-                <a href="./index.html">xayn | forge arc</a>
+                <a href="./index.html" class="font-medium">xayn | forge arc</a>
             </div>
 
 
-            <div class="nav-items">
-                <ul>
-                    <li><a href="#">X</a></li>
-                    <li><a href="#">Be</a></li>
-                    <li><a href="#">Fb</a></li>
+            <div class="nav-items border border-solid border-white rounded-lg m-2">
+                <ul class="flex gap-5 flex-wrap">
+                    <li><a href="#" class="py-2 px-4">X</a></li>
+                    <li><a href="#" class="py-2 px-4">Be</a></li>
+                    <li><a href="#" class="py-2 px-4">Fb</a></li>
                 </ul>
             </div>
 
             <div class="side-nav">
-                <button class="btn1">Hire me</button>
-                <button>o</button>
+                <button class="btn1 cursor-pointer bg-[linear-gradient(to_right,#7A87FB,#FFD49C)] text-black border-none rounded-full py-2 px-3 hover:bg-gradient-to-l from-[#7A87FB] to-[#FFD49C]">Hire me</button>
+                <button class="cursor-pointer bg-[linear-gradient(to_right,#7A87FB,#FFD49C)] text-black border-none rounded-full py-2 px-3 hover:bg-gradient-to-l from-[#7A87FB] to-[#FFD49C]">o</button>
             </div>
         </nav>
 
