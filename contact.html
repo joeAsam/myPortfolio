@@ -5,19 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact xayn</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="main.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Anton&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 </head>
 <body class="box-border list-none no-underline font-poppins font-sans-serif text-xs text-white bg-[#101111]">
-    <header class="m-7.5 mb-19">
+    <header class="w-[75%] max-w-[1200px] my-0 mx-auto m-7.5 mb-19">
         <nav class="flex flex-wrap justify-between items-center">
             <div class="logo font-medium">
                 <a href="./index.html">xayn | forge arc</a>
             </div>
 
 
-            <div class="nav-items md:hidden border border-solid border-white rounded-lg m-2" id="nav-items">
+            <div class="hamburger block md:hidden ml-auto cursor-pointer text-2xl" id="hamburger">
+                &#9776;
+            </div>
+
+            <div class="hidden md:block nav-items border border-solid border-white rounded-lg m-2" id="nav-items">
                 <ul class="flex gap-5 flex-wrap">
                     <li><a href="index.html" class="py-2 px-4">Home</a></li>
                     <li><a href="about.html" class="py-2 px-4">About</a></li>
@@ -26,20 +31,20 @@
                 </ul>
             </div>
 
-            <div class="side-nav m-2">
+            <div class="hidden md:block side-nav m-2">
                 <button class="btn1 cursor-pointer bg-[linear-gradient(to_right,#7A87FB,#FFD49C)] text-black border-none rounded-full py-2 px-3 hover:bg-gradient-to-l from-[#7A87FB] to-[#FFD49C]">Hire me</button>
                 <button class="cursor-pointer bg-[linear-gradient(to_right,#7A87FB,#FFD49C)] text-black border-none rounded-full py-1 px-2.5 hover:bg-gradient-to-l from-[#7A87FB] to-[#FFD49C]">o</button>
             </div>
         </nav>
     </header>
 
-    <section class="contactForm mt-15 w-[75%] max-w[1200px] mx-auto">
+    <section class="contactForm mt-15 w-[75%] max-w-[1200px] my-0 mx-auto">
 
-        <div class="container flex flex-wrap gap-7.5">
+        <div class="container w-[75%] max-w-[1200px] justify-center items-center my-0 mx-auto flex flex-wrap gap-7.5">
 
             <div class="leftSide">
                 <div class="box bg-[#7A87FB] text-center py-12.5 px-30 mb-3.75">
-                    <div class="icon flex justify-center bg-white w-12.5 h-12.5 rounded-xl">
+                    <div class="icon flex justify-self-center mb-2 bg-white w-12.5 h-12.5 rounded-xl">
 
                     </div>
 
@@ -48,7 +53,7 @@
                 </div>
 
                 <div class="box bg-[#7A87FB] text-center py-12.5 px-30 mb-3.75">
-                    <div class="icon flex justify-center bg-white w-12.5 h-12.5 rounded-xl">
+                    <div class="icon bg-white flex justify-self-center mb-2 w-12.5 h-12.5 rounded-xl">
 
                     </div>
 
@@ -57,7 +62,7 @@
                 </div>
 
                 <div class="box bg-[#7A87FB] text-center py-12.5 px-30 mb-3.75">
-                    <div class="icon flex justify-center bg-white w-12.5 h-12.5 rounded-xl">
+                    <div class="icon flex justify-self-center mb-2 bg-white w-12.5 h-12.5 rounded-xl">
 
                     </div>
 
@@ -67,7 +72,7 @@
             </div>
 
             <form action="#">
-                <div class="contact p-7.5 rounded-lg bg-black flex">
+                <div class="contact p-7.5 rounded-lg bg-black flex flex-1">
                     <h2 class="text-[clamp(1.5rem,4vw,2.5rem)] font-semibold">Contact Me</h2>
 
                     <label for="name">Name*</label><br>
@@ -84,9 +89,9 @@
         </div>
     </section>
 
-    <footer class="mt-37.5 mb-12.5 mx-auto">
+    <footer class="w-[75%] max-w-[1200px] my-0 mt-37.5 mb-12.5 mx-auto">
         
-        <nav>
+        <nav class="flex flex-wrap justify-between items-center">
             <div class="logo">
                 <a href="./index.html" class="font-medium">xayn | forge arc</a>
             </div>
@@ -100,7 +105,7 @@
                 </ul>
             </div>
 
-            <div class="side-nav">
+            <div class="side-nav m-2">
                 <button class="btn1 cursor-pointer bg-[linear-gradient(to_right,#7A87FB,#FFD49C)] text-black border-none rounded-full py-2 px-3 hover:bg-gradient-to-l from-[#7A87FB] to-[#FFD49C]">Hire me</button>
                 <button class="cursor-pointer bg-[linear-gradient(to_right,#7A87FB,#FFD49C)] text-black border-none rounded-full py-2 px-3 hover:bg-gradient-to-l from-[#7A87FB] to-[#FFD49C]">o</button>
             </div>

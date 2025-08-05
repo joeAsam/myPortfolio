@@ -5,19 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About xayn</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="main.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Anton&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 </head>
 <body class="box-border list-none no-underline font-poppins font-sans-serif text-xs text-white bg-[#101111]">
-    <header class="m-7.5 mb-19">
+    <header class="w-[75%] max-w-[1200px] my-0 mx-auto m-7.5 mb-19">
         <nav class="flex flex-wrap justify-between items-center">
             <div class="logo font-medium">
                 <a href="./index.html">xayn | forge arc</a>
             </div>
 
+            <div class="hamburger block md:hidden ml-auto cursor-pointer text-2xl" id="hamburger">
+                &#9776;
+            </div>
 
-            <div class="nav-items md:hidden border border-solid border-white rounded-lg m-2">
+            <div class="nav-items hidden md:block border border-solid border-white rounded-lg m-2">
                 <ul class="flex gap-5 flex-wrap">
                     <li><a href="index.html" class="py-2 px-4">Home</a></li>
                     <li><a href="about.html" class="py-2 px-4">About</a></li>
@@ -26,7 +30,7 @@
                 </ul>
             </div>
 
-            <div class="side-nav m-2">
+            <div class="hidden md:block side-nav m-2">
                 <button class="btn1 cursor-pointer bg-[linear-gradient(to_right,#7A87FB,#FFD49C)] text-black border-none rounded-full py-2 px-3 hover:bg-gradient-to-l from-[#7A87FB] to-[#FFD49C]">Hire me</button>
                 <button class="cursor-pointer bg-[linear-gradient(to_right,#7A87FB,#FFD49C)] text-black border-none rounded-full py-1 px-2.5 hover:bg-gradient-to-l from-[#7A87FB] to-[#FFD49C]">o</button>
             </div>
@@ -35,7 +39,7 @@
 
     <section class="abtSect-1 w-[80%] mx-auto mt-15">
 
-        <div class="container">
+        <div class="container w-[75%] max-w-[1200px] my-0 mx-auto">
 
             <h2 class="text-3xl font-semibold">Overview</h2>
 
@@ -50,7 +54,7 @@
     
     <section class="abtSect-1 w-[80%] mx-auto mt-15">
 
-        <div class="container">
+        <div class="container w-[75%] max-w-[1200px] my-0 mx-auto">
 
             <h2 class="text-3xl font-semibold">What I Do</h2>
 
@@ -68,7 +72,7 @@
     
     <section class="abtSect-1 w-[80%] mx-auto mt-15">
 
-        <div class="container">
+        <div class="container w-[75%] max-w-[1200px] my-0 mx-auto">
 
             <h2 class="text-3xl font-semibold">My Journey</h2>
 
@@ -83,12 +87,12 @@
     
     <section class="abtSect-2 w-[80%] mx-auto mt-15 mb-15">
 
-        <div class="container">
+        <div class="container w-[75%] max-w-[1200px] my-0 mx-auto">
             <h2 class="text-3xl font-semibold">Tools & Tech Stack</h2>
 
             <div class="firstCardSection flex justify-between">
                 <div class="toolCard w-full bg-[#000] rounded-xs p-3.75 mt-5 text-center mr-2 ml-2">
-                    <div class="image flex justify-center self-center bg-white w-17.5 h-17.5 rounded-xs">
+                    <div class="image flex justify-self-center self-center bg-white w-17.5 h-17.5 rounded-xs">
 
                     </div>
                     
@@ -99,7 +103,7 @@
                 </div>
 
                 <div class="toolCard w-full bg-[#000] rounded-xs p-3.75 mt-5 text-center mr-2 ml-2">
-                    <div class="image flex justify-center self-center bg-white w-17.5 h-17.5 rounded-xs">
+                    <div class="image flex justify-self-center self-center bg-white w-17.5 h-17.5 rounded-xs">
 
                     </div>
                     
@@ -110,7 +114,7 @@
                 </div>
 
                 <div class="toolCard w-full bg-[#000] rounded-xs p-3.75 mt-5 text-center mr-2 ml-2">
-                    <div class="image flex justify-center self-center bg-white w-17.5 h-17.5 rounded-xs">
+                    <div class="image flex justify-self-center self-center bg-white w-17.5 h-17.5 rounded-xs">
 
                     </div>
                     
@@ -123,7 +127,7 @@
 
             <div class="secondCardSection flex justify-between">
                 <div class="toolCard w-full bg-[#000] rounded-xs p-3.75 mt-5 text-center mr-2 ml-2">
-                    <div class="image flex justify-center self-center bg-white w-17.5 h-17.5 rounded-xs">
+                    <div class="image flex justify-self-center self-center bg-white w-17.5 h-17.5 rounded-xs">
 
                     </div>
                     
@@ -134,7 +138,7 @@
                 </div>
 
                 <div class="toolCard w-full bg-[#000] rounded-xs p-3.75 mt-5 text-center mr-2 ml-2">
-                    <div class="image flex justify-center self-center bg-white w-17.5 h-17.5 rounded-xs">
+                    <div class="image flex justify-self-center self-center bg-white w-17.5 h-17.5 rounded-xs">
 
                     </div>
                     
@@ -145,7 +149,7 @@
                 </div>
 
                 <div class="toolCard w-full bg-[#000] rounded-xs p-3.75 mt-5 text-center mr-2 ml-2">
-                    <div class="image flex justify-center self-center bg-white w-17.5 h-17.5 rounded-xs">
+                    <div class="image flex justify-self-center self-center bg-white w-17.5 h-17.5 rounded-xs">
 
                     </div>
                     
@@ -162,7 +166,7 @@
 
     <section class="abtSect-3 w-[80%] mx-auto mt-15">
 
-        <div class="container text-base">
+        <div class="container w-[75%] max-w-[1200px] my-0 mx-auto text-base">
 
             <h2>Call to Action</h2>
 
@@ -177,9 +181,9 @@
         </div>
     </section>
 
-    <footer class="mt-37.5 mb-12.5 mx-auto">
+    <footer class="w-[75%] max-w-[1200px] my-0 mt-37.5 mb-12.5 mx-auto">
         
-        <nav>
+        <nav class="flex flex-wrap justify-between items-center">
             <div class="logo">
                 <a href="./index.html" class="font-medium">xayn | forge arc</a>
             </div>
@@ -193,7 +197,7 @@
                 </ul>
             </div>
 
-            <div class="side-nav">
+            <div class="side-nav m-2">
                 <button class="btn1 cursor-pointer bg-[linear-gradient(to_right,#7A87FB,#FFD49C)] text-black border-none rounded-full py-2 px-3 hover:bg-gradient-to-l from-[#7A87FB] to-[#FFD49C]">Hire me</button>
                 <button class="cursor-pointer bg-[linear-gradient(to_right,#7A87FB,#FFD49C)] text-black border-none rounded-full py-2 px-3 hover:bg-gradient-to-l from-[#7A87FB] to-[#FFD49C]">o</button>
             </div>
